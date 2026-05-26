@@ -52,47 +52,296 @@
 
       <hr>
 
-      <!-- ============ PRIVACY / DATENSCHUTZ ============ -->
-      <h2 id="privacy">Privacy Policy / Datenschutz</h2>
+      <!-- ============ PRIVACY POLICY ============ -->
+      <h2 id="privacy">Privacy Policy</h2>
       <p style="font-size: smaller; color: gray; max-width: 780px;">
-        Your privacy matters. This policy explains how BetterCast handles your data.
-        <br><br>
-        <strong>Data collection:</strong><br>
-        &bull; BetterCast does <u>not</u> collect, sell, or transmit personal data to the developer.<br>
-        &bull; No account or sign-in is required to use the app.<br>
-        &bull; No advertising SDKs and no third-party analytics or tracking are used.<br>
-        &bull; Podcast transcription runs <strong>on your device</strong>; audio is not uploaded to us for transcription.
-        <br><br>
-        <strong>Data stored on your device and in your iCloud:</strong><br>
-        &bull; Your subscriptions, playlists, playback progress, and transcripts stay on your device.<br>
-        &bull; If iCloud sync is enabled, this data is stored in <em>your own private iCloud</em> account
-        and is not accessible to the developer. It is governed by
-        <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple&rsquo;s Privacy Policy</a>.
-        <br><br>
-        <strong>Third-party podcast content:</strong><br>
-        &bull; To play and download episodes, the app fetches RSS feeds and audio directly from the
-        podcast publishers&rsquo; servers. Those publishers may receive standard network request
-        information (such as your IP address) under their own privacy policies, as is normal for any
-        podcast app.
-        <br><br>
-        <strong>Apple developer statistics:</strong><br>
-        &bull; Apple may collect limited, anonymized, aggregated usage statistics (such as crash reports
-        and download counts) through the App Store as part of their standard developer program. This
-        data cannot be used to identify you.
-        <br><br>
-        <strong>Summary:</strong><br>
-        BetterCast itself collects no personal data &mdash; everything happens on your device or in your
-        own iCloud. For any privacy questions, contact
-        <a href="mailto:khashabri@hotmail.com?subject=BetterCast%20Privacy">khashabri@hotmail.com</a>.
+        <em>Last updated: May 7, 2026</em>
       </p>
 
+      <div style="font-size: smaller; color: gray; max-width: 780px;">
+        <h3>Introduction</h3>
+        <p>
+          BetterCast is a podcast player for iOS, developed and published by Khashayar Abryoghani as an
+          individual developer. The app is free to download and contains no advertisements. Some optional
+          features are available through a "Premium" subscription purchased through Apple's in-app purchase
+          system; the developer never receives your payment information.
+        </p>
+        <p>
+          This Privacy Policy explains what information BetterCast handles and how it is handled. In this
+          document, "the developer" refers to Khashayar Abryoghani, "the app" refers to BetterCast, and
+          "you" refers to the person using the app.
+        </p>
+
+        <h3>Summary</h3>
+        <p>
+          BetterCast does not require an account, does not include analytics, advertising, or third-party
+          tracking SDKs, and does not send your personal data to the developer. The developer does not
+          operate any servers that receive data about you.
+        </p>
+
+        <h3>What the developer does not collect</h3>
+        <p>The app does not collect, transmit, or store on developer-controlled systems any of the following:</p>
+        <ul>
+          <li>Account information, names, or sign-in credentials.</li>
+          <li>Analytics, usage statistics, or telemetry.</li>
+          <li>Crash reports automatically uploaded to third-party services.</li>
+          <li>Advertising identifiers.</li>
+          <li>Location data.</li>
+          <li>Contacts, photos, or calendar data.</li>
+          <li>Microphone audio. The app does not request microphone access.</li>
+        </ul>
+
+        <h3>Data stored on your device</h3>
+        <p>The app stores the following information locally on your device using Apple's SwiftData framework:</p>
+        <ul>
+          <li>Your podcast subscriptions and feed URLs.</li>
+          <li>Episode metadata, including titles, descriptions, and artwork URLs.</li>
+          <li>Downloaded episode audio files and any audio files you import.</li>
+          <li>Playback progress, played and starred state, and listening history.</li>
+          <li>Playlists, queues, and per-podcast settings.</li>
+          <li>Transcripts generated on your device and any transcription rules you create.</li>
+          <li>App preferences such as playback speed, appearance, and storage limits.</li>
+        </ul>
+        <p>
+          This data remains on your device unless you choose to enable iCloud sync, described below. You can
+          remove all locally stored data at any time using "Reset All Data" in Settings, or by uninstalling
+          the app.
+        </p>
+
+        <h3>iCloud sync (Apple CloudKit)</h3>
+        <p>
+          If you have iCloud enabled on your device and you have not disabled BetterCast's iCloud access,
+          the app uses Apple's CloudKit service to sync a subset of your library between your own devices.
+          The data that may be synced includes your podcast subscriptions, playlists, per-podcast settings,
+          and episode playback state.
+        </p>
+        <p>
+          This data is stored in your private CloudKit database, inside the iCloud container
+          <code>iCloud.com.khashabri.BetterCast</code>. It is associated with your Apple ID and is governed
+          by <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>. The
+          developer cannot read, access, or export the contents of this private database.
+        </p>
+        <p>
+          You can disable iCloud sync at any time in iOS Settings &rarr; [your name] &rarr; iCloud &rarr;
+          Apps Using iCloud &rarr; BetterCast.
+        </p>
+
+        <h3>Network requests the app makes</h3>
+        <p>
+          To function as a podcast player, the app makes network requests to the following parties. The
+          developer does not receive copies of these requests.
+        </p>
+
+        <h4>Apple search and charts services</h4>
+        <p>
+          When you search for podcasts or browse charts, the app sends your search query and standard HTTP
+          request metadata to Apple's iTunes Search API and to Apple's RSS Marketing Tools service. These
+          requests are subject to Apple's Privacy Policy.
+        </p>
+
+        <h4>Podcast publishers</h4>
+        <p>
+          When you subscribe to or refresh a podcast, the app fetches that podcast's RSS feed directly from
+          the URL provided by its publisher. When you stream or download an episode, the audio file and
+          artwork are fetched directly from the publisher's hosting servers or content-delivery network.
+          Those parties may see your IP address and standard HTTP metadata. The developer does not control
+          their privacy practices, and you should review the privacy policy of any podcast you subscribe to.
+        </p>
+
+        <h4>Hugging Face (only if on-device transcription is enabled)</h4>
+        <p>
+          If you enable on-device transcription, the app uses the WhisperKit library, which downloads
+          machine-learning model files from huggingface.co. Only model files are downloaded. No audio,
+          transcript, or personal data is uploaded to Hugging Face. After the model is on your device,
+          transcription runs entirely offline on your device.
+        </p>
+
+        <h3>Third-party services</h3>
+        <ul>
+          <li>Apple, Inc. &mdash; search, charts, CloudKit sync, in-app purchases, and standard iOS services.</li>
+          <li>Podcast publishers &mdash; provide the RSS feeds, audio, and artwork you choose to access.</li>
+          <li>Hugging Face, Inc. &mdash; hosts the speech-recognition model files used by WhisperKit, only when you enable on-device transcription.</li>
+        </ul>
+
+        <h3>Subscriptions and payments</h3>
+        <p>
+          BetterCast offers an optional "Premium" subscription that unlocks additional features.
+          Subscriptions are sold and processed exclusively through Apple's in-app purchase system. When you
+          start, manage, or cancel a subscription, that transaction takes place between you and Apple under
+          Apple's Privacy Policy and Apple's Media Services Terms.
+        </p>
+        <p>
+          The developer does not receive or store your name, email address, payment-card details, or any
+          other personally identifying billing information. To determine which features to unlock, the app
+          reads your subscription status locally on your device using Apple's StoreKit framework. That
+          subscription state is not transmitted to the developer.
+        </p>
+
+        <h3>Children's privacy</h3>
+        <p>
+          BetterCast is not directed to children under 13, and under 16 in the European Economic Area. The
+          developer does not knowingly collect information from children. Podcast content is provided by
+          third parties; parents and guardians are encouraged to supervise their children's listening.
+        </p>
+
+        <h3>Your choices</h3>
+        <p>
+          You can disable iCloud sync in iOS Settings as described above. You can delete all locally stored
+          data using "Reset All Data" in Settings, or by uninstalling the app. Because the developer does
+          not collect personal data, there is no developer-side account to delete.
+        </p>
+
+        <h3>Users in the EU, UK, and similar jurisdictions</h3>
+        <p>
+          Where data-protection laws such as the GDPR or UK GDPR apply, the developer holds no personal
+          data about you that could be exported or erased on the developer's side. Any data synced through
+          iCloud is controlled by you and Apple, and is subject to Apple's Privacy Policy. If you have
+          questions about this, you can contact the developer at the address below.
+        </p>
+
+        <h3>Changes to this policy</h3>
+        <p>
+          This policy may be updated as the app evolves. The "Last updated" date at the top of this section
+          will reflect the most recent version. Significant changes will also be noted in the App Store
+          release notes for the relevant version.
+        </p>
+
+        <h3>Contact</h3>
+        <p>
+          Questions about this Privacy Policy can be sent to
+          <a href="mailto:khashabri@hotmail.com?subject=BetterCast%20Privacy">khashabri@hotmail.com</a>.
+        </p>
+      </div>
+
+      <hr>
+
+      <!-- ============ TERMS OF USE ============ -->
       <h2 id="terms">Terms of Use</h2>
       <p style="font-size: smaller; color: gray; max-width: 780px;">
-        Use of BetterCast is governed by Apple&rsquo;s standard End User License Agreement (EULA):
-        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">apple.com/legal/internet-services/itunes/dev/stdeula</a>.
-        The app is provided &ldquo;as is&rdquo;; podcast content is owned by its respective creators and
-        publishers.
+        <em>Last updated: May 7, 2026</em>
       </p>
+
+      <div style="font-size: smaller; color: gray; max-width: 780px;">
+        <h3>Acceptance of these Terms</h3>
+        <p>
+          By downloading, installing, or using BetterCast (the "app"), you agree to these Terms of Use. If
+          you do not agree, please do not use the app.
+        </p>
+        <p>
+          These Terms are entered into between you and Khashayar Abryoghani, an individual developer (the
+          "developer").
+        </p>
+
+        <h3>About the app</h3>
+        <p>
+          BetterCast is a free podcast client for iOS. It allows you to discover, subscribe to, download,
+          and play publicly available podcasts, organize them into playlists, and optionally generate
+          transcripts on your device. The app does not produce or host the podcast content itself.
+        </p>
+
+        <h3>License</h3>
+        <p>
+          Subject to your compliance with these Terms, the developer grants you a personal, non-exclusive,
+          non-transferable, revocable license to use the app on Apple-branded devices that you own or
+          control, solely for your own non-commercial use.
+        </p>
+        <p>
+          Your use of the app is also governed by Apple's Media Services Terms and the
+          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Licensed Application End User License Agreement</a>
+          (the "Apple Standard EULA") that applies to apps distributed through the App Store. Where these
+          Terms and the Apple Standard EULA conflict on any matter, the Apple Standard EULA controls only
+          as required by Apple.
+        </p>
+
+        <h3>Acceptable use</h3>
+        <p>You agree that you will not:</p>
+        <ul>
+          <li>Use the app to infringe the intellectual-property rights or privacy of any third party.</li>
+          <li>Reverse engineer, decompile, or disassemble the app, except to the extent that applicable law expressly permits.</li>
+          <li>Use the app to perform automated bulk scraping or denial-of-service activity against podcast publishers or any third-party service.</li>
+          <li>Use the app in violation of any applicable law or regulation.</li>
+        </ul>
+
+        <h3>Third-party content</h3>
+        <p>
+          Podcasts, episode audio, artwork, show notes, and any other media accessible through the app are
+          provided by independent podcast publishers and other third parties. They are the sole owners of,
+          and responsible for, that content. BetterCast acts only as a player that lets you access publicly
+          available RSS feeds.
+        </p>
+        <p>
+          The developer does not endorse, guarantee, or take responsibility for any third-party content. If
+          you believe a podcast infringes your rights, please contact the publisher of that podcast directly.
+        </p>
+
+        <h3>Third-party services and open-source components</h3>
+        <p>
+          Your use of the app may also be subject to the terms and policies of Apple, Inc., individual
+          podcast publishers, and Hugging Face, Inc. (used only when you enable on-device transcription).
+        </p>
+        <p>
+          BetterCast incorporates open-source software. The licenses applicable to that software are listed
+          in the Attributions screen inside the app and form part of these Terms with respect to those
+          components.
+        </p>
+
+        <h3>Disclaimers</h3>
+        <p>
+          The app is provided "AS IS" and "AS AVAILABLE", without warranties of any kind, whether express,
+          implied, or statutory, including without limitation any warranty of merchantability, fitness for
+          a particular purpose, non-infringement, uninterrupted or error-free operation, or accuracy or
+          completeness of any third-party content or automatically generated transcripts.
+        </p>
+        <p>
+          The developer does not warrant that the app will be free of bugs or that any defects will be
+          corrected.
+        </p>
+
+        <h3>Limitation of liability</h3>
+        <p>
+          To the maximum extent permitted by applicable law, the developer shall not be liable for any
+          indirect, incidental, special, consequential, exemplary, or punitive damages, or for any loss of
+          data, profits, revenue, goodwill, or business, arising out of or in connection with your use of,
+          or inability to use, the app.
+        </p>
+        <p>
+          To the maximum extent permitted by applicable law, the developer's total aggregate liability
+          arising out of or relating to the app or these Terms shall not exceed the amount you paid for the
+          app, which for the avoidance of doubt is zero.
+        </p>
+        <p>
+          Some jurisdictions do not allow the exclusion or limitation of certain damages, so some of the
+          above limitations may not apply to you.
+        </p>
+
+        <h3>Termination</h3>
+        <p>
+          These Terms remain in effect while you use the app. Your license terminates automatically if you
+          breach these Terms. You may terminate at any time by uninstalling the app. The disclaimers,
+          limitation of liability, and any other provisions that by their nature should survive will survive
+          termination.
+        </p>
+
+        <h3>Governing law and disputes</h3>
+        <p>
+          These Terms are governed by the laws of the Federal Republic of Germany, without regard to its
+          conflict-of-law principles. Mandatory consumer-protection rights available to you under the law
+          of your country of residence are not affected by this clause.
+        </p>
+
+        <h3>Changes to these Terms</h3>
+        <p>
+          These Terms may be updated as the app evolves. The "Last updated" date at the top of this section
+          will reflect the most recent version. Continued use of the app after changes take effect
+          constitutes your acceptance of the revised Terms.
+        </p>
+
+        <h3>Contact</h3>
+        <p>
+          Questions about these Terms can be sent to
+          <a href="mailto:khashabri@hotmail.com?subject=BetterCast%20Terms">khashabri@hotmail.com</a>.
+        </p>
+      </div>
     </div>
   </div>
 </body>
