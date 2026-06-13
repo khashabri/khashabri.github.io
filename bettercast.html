@@ -55,7 +55,7 @@
       <!-- ============ PRIVACY POLICY ============ -->
       <h2 id="privacy">Privacy Policy</h2>
       <p style="font-size: smaller; color: gray; max-width: 780px;">
-        <em>Last updated: May 7, 2026</em>
+        <em>Last updated: June 13, 2026</em>
       </p>
 
       <div style="font-size: smaller; color: gray; max-width: 780px;">
@@ -74,18 +74,20 @@
 
         <h3>Summary</h3>
         <p>
-          BetterCast does not require an account, does not include analytics, advertising, or third-party
-          tracking SDKs, and does not send your personal data to the developer. The developer does not
-          operate any servers that receive data about you.
+          BetterCast does not require an account and shows no advertising. To understand how the app is used
+          and to manage occasional in-app offers, it uses Google Firebase (Analytics and Remote Config).
+          Firebase collects anonymous, aggregated usage data linked only to a random app-instance identifier
+          &mdash; never your name, email, or account &mdash; and the developer sees only aggregated reports.
+          Apart from this, the developer operates no servers that receive your personal data. What Firebase
+          collects is described under "Analytics and remote configuration" below.
         </p>
 
         <h3>What the developer does not collect</h3>
         <p>The app does not collect, transmit, or store on developer-controlled systems any of the following:</p>
         <ul>
           <li>Account information, names, or sign-in credentials.</li>
-          <li>Analytics, usage statistics, or telemetry.</li>
-          <li>Crash reports automatically uploaded to third-party services.</li>
-          <li>Advertising identifiers.</li>
+          <li>Advertising identifiers (the IDFA), or any advertising SDK.</li>
+          <li>Crash reports uploaded to a third-party crash-reporting service.</li>
           <li>Location data.</li>
           <li>Contacts, photos, or calendar data.</li>
           <li>Microphone audio. The app does not request microphone access.</li>
@@ -156,9 +158,36 @@
           transcription runs entirely offline on your device.
         </p>
 
+        <h3>Analytics and remote configuration (Google Firebase)</h3>
+        <p>
+          To understand how BetterCast is used and to improve it, the app uses Google Firebase Analytics. It
+          records anonymous, aggregated usage events such as app opens, which screens are viewed, and
+          high-level interactions &mdash; for example subscribing to a podcast, starting playback, running a
+          search, downloading or importing audio, or interacting with the paywall or a limited-time offer.
+          These events are not linked to your name, email, or any account.
+        </p>
+        <p>
+          To deliver these events, Google generates a random, resettable app-instance identifier and processes
+          basic device and environment information such as device model, operating-system version, and coarse
+          region and language. This data is sent to and stored by Google, is governed by
+          <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>, and the
+          developer can see only aggregated reports &mdash; never data that identifies you personally.
+        </p>
+        <p>
+          The app also uses Google Firebase Remote Config to control occasional in-app offers (such as a
+          limited-time discount) without an app update. Remote Config fetches a small configuration file from
+          Google; the decision about whether to show an offer is then made entirely on your device.
+        </p>
+        <p>
+          BetterCast does not link an advertising identifier (IDFA), does not use Firebase for advertising,
+          and does not enable Google's advertising or audience features. You can reset the app-instance
+          identifier at any time by reinstalling the app.
+        </p>
+
         <h3>Third-party services</h3>
         <ul>
           <li>Apple, Inc. &mdash; search, charts, CloudKit sync, in-app purchases, and standard iOS services.</li>
+          <li>Google LLC (Firebase) &mdash; anonymous usage analytics (Firebase Analytics) and remote configuration of in-app offers (Firebase Remote Config).</li>
           <li>Podcast publishers &mdash; provide the RSS feeds, audio, and artwork you choose to access.</li>
           <li>Hugging Face, Inc. &mdash; hosts the speech-recognition model files used by WhisperKit, only when you enable on-device transcription.</li>
         </ul>
@@ -193,10 +222,13 @@
 
         <h3>Users in the EU, UK, and similar jurisdictions</h3>
         <p>
-          Where data-protection laws such as the GDPR or UK GDPR apply, the developer holds no personal
-          data about you that could be exported or erased on the developer's side. Any data synced through
-          iCloud is controlled by you and Apple, and is subject to Apple's Privacy Policy. If you have
-          questions about this, you can contact the developer at the address below.
+          Where data-protection laws such as the GDPR or UK GDPR apply, the analytics data described above is
+          anonymous and aggregated and is processed by Google on the developer's behalf under
+          <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>; it is not
+          linked to your identity. The developer holds no other personal data about you that could be exported
+          or erased on the developer's side. Any data synced through iCloud is controlled by you and Apple,
+          and is subject to Apple's Privacy Policy. If you have questions about this, you can contact the
+          developer at the address below.
         </p>
 
         <h3>Changes to this policy</h3>
@@ -276,8 +308,9 @@
 
         <h3>Third-party services and open-source components</h3>
         <p>
-          Your use of the app may also be subject to the terms and policies of Apple, Inc., individual
-          podcast publishers, and Hugging Face, Inc. (used only when you enable on-device transcription).
+          Your use of the app may also be subject to the terms and policies of Apple, Inc., Google LLC
+          (Firebase analytics and remote configuration), individual podcast publishers, and Hugging Face,
+          Inc. (used only when you enable on-device transcription).
         </p>
         <p>
           BetterCast incorporates open-source software. The licenses applicable to that software are listed
