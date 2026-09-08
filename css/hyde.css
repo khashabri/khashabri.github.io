@@ -67,6 +67,26 @@ html {
     bottom: 0;
     width: 19rem;
     text-align: center;
+    /* Let the sidebar scroll on its own when it is taller than the viewport,
+     * instead of clipping the lower nav items. */
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,.3) transparent;
+  }
+  .sidebar::-webkit-scrollbar {
+    width: 8px;
+  }
+  .sidebar::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,.25);
+    border-radius: 4px;
+  }
+  .sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255,255,255,.4);
+  }
+  .sidebar::-webkit-scrollbar-track {
+    background: transparent;
   }
 }
 
