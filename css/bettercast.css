@@ -1,0 +1,298 @@
+/* BetterCast portfolio highlight and standalone app page. */
+.bettercast-showcase,
+.bettercast-page {
+  --bc-accent: #a62654;
+  --bc-muted: #666;
+}
+
+.bettercast-showcase {
+  margin: 1.25rem 0 2rem;
+  padding: 1.35rem;
+  border: 1px solid #eddde3;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #fff7fa, #fff);
+  scroll-margin-top: 1rem;
+}
+
+.content.container.bettercast-page {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 4rem;
+}
+
+.bc-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bc-heading .bc-icon {
+  flex-shrink: 0;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: 0;
+  border-radius: 1rem;
+}
+
+.bc-heading h1,
+.bc-heading h3 {
+  margin: 0 0 .2rem;
+}
+
+.bettercast-showcase .bc-heading h3 {
+  font-size: 1.6rem;
+}
+
+.bc-eyebrow {
+  margin-bottom: .4rem;
+  color: var(--bc-accent);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+
+.bc-platforms,
+.bc-small,
+.bc-source {
+  color: var(--bc-muted);
+  font-size: .85rem;
+}
+
+.bc-platforms {
+  margin: 0;
+}
+
+.bc-nav,
+.bc-nav > div,
+.bc-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .75rem 1.25rem;
+}
+
+.bc-nav {
+  justify-content: space-between;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #eee;
+  font-size: .9rem;
+}
+
+.bc-actions {
+  margin: 1.25rem 0;
+  font-size: .9rem;
+}
+
+.bc-store-link {
+  display: inline-block;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.bc-store-link img {
+  display: block;
+  width: 160px;
+  height: auto;
+  margin: 0;
+  border-radius: 0;
+}
+
+.bc-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 15rem;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem 0;
+}
+
+.bc-hero .bc-tagline {
+  margin: 1.5rem 0 1rem;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.1;
+  letter-spacing: -.025em;
+}
+
+.bc-intro {
+  max-width: 28rem;
+  font-size: 1.15rem;
+}
+
+.bc-hero-preview img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: 16px;
+  box-shadow: 0 14px 36px rgba(60, 30, 10, .12);
+}
+
+.bc-section {
+  padding: 1.5rem 0;
+  border-top: 1px solid #eee;
+  scroll-margin-top: 1rem;
+}
+
+.bc-features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.bc-features article {
+  padding: 1.2rem;
+  border: 1px solid #ece5e8;
+  border-radius: 14px;
+  background: #fffafb;
+}
+
+.bc-features h3 {
+  margin: 0 0 .6rem;
+  font-size: 1.05rem;
+}
+
+.bc-features p {
+  margin: 0;
+  font-size: .95rem;
+}
+
+.bc-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 1.25rem 0;
+  padding-bottom: .5rem;
+}
+
+.bc-screenshot {
+  min-width: 0;
+  margin: 0;
+}
+
+.bc-screenshot a {
+  display: block;
+  border-radius: 12px;
+}
+
+.bc-screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: 12px;
+}
+
+.bc-screenshot figcaption {
+  margin-top: .6rem;
+  color: var(--bc-muted);
+  font-size: .85rem;
+  text-align: center;
+}
+
+.bc-device-gallery {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  gap: 3rem;
+  margin: 1.5rem 0;
+}
+
+.bc-device-gallery .bc-screenshot img {
+  max-height: 29rem;
+  object-fit: contain;
+}
+
+.bc-bottom-cta {
+  margin: 2rem 0 1rem;
+  padding: 2rem 1rem;
+  border-radius: 16px;
+  background: #fff4f8;
+  text-align: center;
+}
+
+.bc-bottom-cta h2 {
+  margin: 0 0 1rem;
+}
+
+.bc-source {
+  font-size: .75rem;
+  text-align: center;
+}
+
+.bettercast-page a:focus-visible,
+.bettercast-showcase a:focus-visible,
+.bc-gallery:focus-visible {
+  outline: 3px solid var(--bc-accent);
+  outline-offset: 4px;
+}
+
+@media (max-width: 55em) {
+  .bc-hero {
+    grid-template-columns: minmax(0, 1fr) 12rem;
+    gap: 1.5rem;
+  }
+
+  .bc-features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 38em) {
+  .content.container.bettercast-page {
+    padding: 1rem 1.1rem 3rem;
+  }
+
+  .bettercast-showcase {
+    padding: 1rem;
+  }
+
+  .bc-heading {
+    gap: .75rem;
+  }
+
+  .bc-heading .bc-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: .8rem;
+  }
+
+  .bc-hero {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 2rem 0;
+  }
+
+  .bc-hero-preview {
+    width: 12rem;
+    justify-self: center;
+  }
+
+  .bc-features {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .bc-gallery {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: min(78%, 20rem);
+    gap: 1rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: .25rem;
+    padding: .25rem .25rem 1rem;
+  }
+
+  .bc-screenshot {
+    scroll-snap-align: start;
+  }
+
+  .bc-device-gallery {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+  }
+
+  .bc-device-gallery .bc-screenshot:last-child {
+    width: 13rem;
+    justify-self: center;
+  }
+}

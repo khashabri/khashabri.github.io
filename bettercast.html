@@ -5,38 +5,168 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="author" content="Khashayar Abryoghani">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BetterCast · Khashayar Abryoghani</title>
+  <meta name="description" content="BetterCast is an ad-free podcast player with on-device transcripts, custom playlists, offline listening, iCloud sync, and CarPlay. Explore features and screenshots.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://khashabri.github.io/bettercast.html">
+  <meta property="og:title" content="BetterCast · Podcast listening, your way">
+  <meta property="og:description" content="On-device transcripts, smart playback, and a library that follows you across Apple devices.">
+  <meta property="og:image" content="https://khashabri.github.io/images/bettercast-icon.jpg">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://khashabri.github.io/bettercast.html">
+  <title>BetterCast · Podcast Player for iPhone, iPad &amp; Apple Watch</title>
 
   <link rel="stylesheet" href="css/poole.css">
   <link rel="stylesheet" href="css/syntax.css">
   <link rel="stylesheet" href="css/hyde.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="css/bettercast.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
 
   <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body class="theme-base-08">
 
-  <div class="content container" style="margin-left: 0; padding-left: 20px;">
+  <main class="content container bettercast-page">
     <div class="page">
-      <h1>BetterCast</h1>
-      <p style="color: gray; font-size: smaller;">Podcast player for iPhone, iPad &amp; Apple Watch</p>
+      <nav class="bc-nav" aria-label="BetterCast navigation">
+        <a href="index.html#projects">← Portfolio</a>
+        <div>
+          <a href="#features">Features</a>
+          <a href="#screenshots">Screenshots</a>
+          <a href="#support">Support</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#terms">Terms</a>
+        </div>
+      </nav>
 
       <!-- ============ MARKETING ============ -->
-      <h2 id="marketing">About the App</h2>
-      <p style="max-width: 780px;">
-        BetterCast is a fast, intuitive, and completely ad-free podcast player built for people who truly
-        love podcasts. It is designed from the ground up to make every part of podcast listening smarter,
-        smoother, and more enjoyable across Apple devices.
-      </p>
-      <ul style="max-width: 780px;">
-        <li>100% ad-free experience &mdash; no banners, no in-app interruptions</li>
-        <li>Advanced playback: speed control, skip silence, chapter markers, episode notes</li>
-        <li>On-device transcription for any podcast, with privacy in mind</li>
-        <li>Powerful playlist customization by keyword, topic, and duration</li>
-        <li>Detailed listening insights and storage analytics</li>
-        <li>Deep Apple ecosystem integration &mdash; iPhone, iPad, Apple Watch, and iMessage</li>
-      </ul>
+      <section class="bc-hero" id="marketing" aria-labelledby="app-title">
+        <div>
+          <div class="bc-heading">
+            <img class="bc-icon" src="images/bettercast-icon.jpg" alt="" width="80" height="80">
+            <div>
+              <p class="bc-eyebrow">By Khashayar Abryoghani</p>
+              <h1 id="app-title">BetterCast</h1>
+              <p class="bc-platforms">Podcast player for iPhone, iPad &amp; Apple Watch</p>
+            </div>
+          </div>
+          <h2 class="bc-tagline">Make more of every episode.</h2>
+          <p class="bc-intro">Transcripts, smarter playback, and playlists that fit the way you listen.</p>
+          <div class="bc-actions">
+            <a class="bc-store-link" href="https://apps.apple.com/app/id6759830475" target="_blank" rel="noopener">
+              <img src="images/download-on-the-app-store.svg" alt="Download BetterCast on the App Store" width="160" height="54">
+            </a>
+            <a href="#screenshots">See it in action ↓</a>
+          </div>
+          <p class="bc-small">Free to download · Optional in-app purchases<br>Requires iOS / iPadOS 26.0 or later; watchOS 26.0 for Apple Watch.</p>
+        </div>
+        <a class="bc-hero-preview" href="#screenshots" aria-label="Explore BetterCast screenshots">
+          <img src="images/bettercast/iphone-player.webp" alt="BetterCast podcast player with episode artwork and playback controls" width="600" height="1299" fetchpriority="high">
+        </a>
+      </section>
+
+      <section class="bc-section" id="features" aria-labelledby="features-title">
+        <p class="bc-eyebrow">Built around your listening</p>
+        <h2 id="features-title">A small app. Plenty of possibilities.</h2>
+        <div class="bc-features">
+          <article>
+            <h3>On-device transcripts</h3>
+            <p>Read along and use keyword rules to skip sections, stop playback, or jump intros.</p>
+          </article>
+          <article>
+            <h3>Playback your way</h3>
+            <p>Adjust speed, navigate chapters, read episode notes, and automatically skip sponsor chapters.</p>
+          </article>
+          <article>
+            <h3>Personal playlists</h3>
+            <p>Filter by keyword, topic, or duration, or hand-pick individual episodes.</p>
+          </article>
+          <article>
+            <h3>Offline &amp; imported audio</h3>
+            <p>Download episodes or bring your own audio files into your library.</p>
+          </article>
+          <article>
+            <h3>Listening insights</h3>
+            <p>Explore listening trends, top podcasts, and storage usage.</p>
+          </article>
+          <article>
+            <h3>At home &amp; on the go</h3>
+            <p>iCloud sync, CarPlay, Apple Watch controls, home screen widgets, and iMessage integration.</p>
+          </article>
+        </div>
+        <p class="bc-small">No banner ads or in-app advertising interruptions. Episodes may contain ads from their creators.</p>
+      </section>
+
+      <section class="bc-section" id="screenshots" aria-labelledby="screenshots-title">
+        <p class="bc-eyebrow">A closer look</p>
+        <h2 id="screenshots-title">BetterCast on iPhone</h2>
+        <p class="bc-small">Select any screenshot to view it full size. On smaller screens, swipe through the gallery.</p>
+        <div class="bc-gallery" role="region" aria-label="BetterCast iPhone screenshots" tabindex="0">
+        <figure class="bc-screenshot">
+          <a href="images/bettercast/iphone-feed.webp" target="_blank" rel="noopener" aria-label="View full-size screenshot: Your podcast feed">
+            <img src="images/bettercast/iphone-feed.webp" alt="BetterCast on iPhone showing a feed of podcast episodes" width="600" height="1299" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Your podcast feed</figcaption>
+        </figure>
+        <figure class="bc-screenshot">
+          <a href="images/bettercast/iphone-player.webp" target="_blank" rel="noopener" aria-label="View full-size screenshot: A focused player">
+            <img src="images/bettercast/iphone-player.webp" alt="BetterCast on iPhone showing episode artwork and playback controls" width="600" height="1299" loading="lazy" decoding="async">
+          </a>
+          <figcaption>A focused player</figcaption>
+        </figure>
+        <figure class="bc-screenshot">
+          <a href="images/bettercast/iphone-transcript.webp" target="_blank" rel="noopener" aria-label="View full-size screenshot: On-device transcripts">
+            <img src="images/bettercast/iphone-transcript.webp" alt="BetterCast on iPhone displaying a transcript alongside the podcast player" width="600" height="1299" loading="lazy" decoding="async">
+          </a>
+          <figcaption>On-device transcripts</figcaption>
+        </figure>
+        <figure class="bc-screenshot">
+          <a href="images/bettercast/iphone-episode-qa.webp" target="_blank" rel="noopener" aria-label="View full-size screenshot: Ask about an episode">
+            <img src="images/bettercast/iphone-episode-qa.webp" alt="BetterCast episode questions screen with Apple Intelligence and suggested questions" width="600" height="1299" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Ask about an episode</figcaption>
+        </figure>
+        <figure class="bc-screenshot">
+          <a href="images/bettercast/iphone-stats.webp" target="_blank" rel="noopener" aria-label="View full-size screenshot: Listening insights">
+            <img src="images/bettercast/iphone-stats.webp" alt="BetterCast listening statistics with a daily listening chart and top podcasts" width="600" height="1299" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Listening insights</figcaption>
+        </figure>
+        <figure class="bc-screenshot">
+          <a href="images/bettercast/iphone-widgets.webp" target="_blank" rel="noopener" aria-label="View full-size screenshot: Useful home screen widgets">
+            <img src="images/bettercast/iphone-widgets.webp" alt="BetterCast widgets showing playback controls, library shortcuts, and listening statistics" width="600" height="1299" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Useful home screen widgets</figcaption>
+        </figure>
+        </div>
+        <p class="bc-small">Episode Q&amp;A uses Apple Intelligence on supported devices.</p>
+      </section>
+
+      <section class="bc-section" aria-labelledby="devices-title">
+        <h2 id="devices-title">Beyond your iPhone</h2>
+        <div class="bc-device-gallery">
+        <figure class="bc-screenshot">
+          <a href="images/bettercast/ipad-library.webp" target="_blank" rel="noopener" aria-label="View full-size screenshot: A spacious library on iPad">
+            <img src="images/bettercast/ipad-library.webp" alt="BetterCast on iPad with a library sidebar and podcast episode feed" width="900" height="1200" loading="lazy" decoding="async">
+          </a>
+          <figcaption>A spacious library on iPad</figcaption>
+        </figure>
+        <figure class="bc-screenshot">
+          <a href="images/bettercast/watch-player.webp" target="_blank" rel="noopener" aria-label="View full-size screenshot: Playback controls on Apple Watch">
+            <img src="images/bettercast/watch-player.webp" alt="BetterCast on Apple Watch showing the current episode and playback controls" width="422" height="514" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Playback controls on Apple Watch</figcaption>
+        </figure>
+        </div>
+      </section>
+
+      <div class="bc-bottom-cta">
+        <h2>Find your next great listen.</h2>
+        <a class="bc-store-link" href="https://apps.apple.com/app/id6759830475" target="_blank" rel="noopener">
+          <img src="images/download-on-the-app-store.svg" alt="Download BetterCast on the App Store" width="160" height="54" loading="lazy">
+        </a>
+      </div>
+      <p class="bc-source">Screenshots and feature details from the <a href="https://apps.apple.com/us/app/bettercast-podcast-player/id6759830475" target="_blank" rel="noopener">BetterCast App Store listing</a>.</p>
 
       <hr>
 
@@ -376,7 +506,7 @@
         </p>
       </div>
     </div>
-  </div>
+  </main>
 </body>
 
 </html>
