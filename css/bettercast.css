@@ -1,11 +1,11 @@
-/* Shared app portfolio cards and standalone BetterCast page. */
-.app-showcase,
+/* BetterCast portfolio highlight and standalone app page. */
+.bettercast-showcase,
 .bettercast-page {
   --bc-accent: #a62654;
   --bc-muted: #666;
 }
 
-.app-showcase {
+.bettercast-showcase {
   margin: 1.25rem 0 2rem;
   padding: 1.35rem;
   border: 1px solid #eddde3;
@@ -40,7 +40,7 @@
   margin: 0 0 .2rem;
 }
 
-.app-showcase .bc-heading h3 {
+.bettercast-showcase .bc-heading h3 {
   font-size: 1.6rem;
 }
 
@@ -164,28 +164,6 @@
   padding-bottom: .5rem;
 }
 
-.bc-gallery-two {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  max-width: 30rem;
-  margin-inline: auto;
-}
-
-.bc-gallery-single {
-  grid-template-columns: minmax(0, 1fr);
-  max-width: 17rem;
-  margin-inline: auto;
-}
-
-.app-overview {
-  margin: 1.25rem 0;
-}
-
-.app-source-link img {
-  width: 160px;
-  height: auto;
-  margin: 0;
-}
-
 .bc-screenshot {
   min-width: 0;
   margin: 0;
@@ -242,7 +220,7 @@
 }
 
 .bettercast-page a:focus-visible,
-.app-showcase a:focus-visible,
+.bettercast-showcase a:focus-visible,
 .bc-gallery:focus-visible {
   outline: 3px solid var(--bc-accent);
   outline-offset: 4px;
@@ -264,7 +242,7 @@
     padding: 1rem 1.1rem 3rem;
   }
 
-  .app-showcase {
+  .bettercast-showcase {
     padding: 1rem;
   }
 
@@ -302,12 +280,6 @@
     scroll-snap-type: x mandatory;
     scroll-padding-inline: .25rem;
     padding: .25rem .25rem 1rem;
-  }
-
-  .bc-gallery-single {
-    grid-template-columns: minmax(0, 1fr);
-    grid-auto-flow: row;
-    grid-auto-columns: auto;
   }
 
   .bc-screenshot {
